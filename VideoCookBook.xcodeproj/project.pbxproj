@@ -10,8 +10,13 @@
 		37402ACB1EFD8AA60044A403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402ACA1EFD8AA60044A403 /* AppDelegate.swift */; };
 		37402ACD1EFD8AA60044A403 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402ACC1EFD8AA60044A403 /* ViewController.swift */; };
 		37402AD01EFD8AA60044A403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37402ACE1EFD8AA60044A403 /* Main.storyboard */; };
-		37402AD21EFD8AA60044A403 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37402AD11EFD8AA60044A403 /* Assets.xcassets */; };
 		37402AD51EFD8AA60044A403 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37402AD31EFD8AA60044A403 /* LaunchScreen.storyboard */; };
+		37402ADE1EFD98750044A403 /* Recipe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402ADD1EFD98750044A403 /* Recipe.swift */; };
+		37402AE11EFDB61A0044A403 /* RecipeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402AE01EFDB61A0044A403 /* RecipeCell.swift */; };
+		37402AE51EFE64550044A403 /* csv.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402AE41EFE64550044A403 /* csv.swift */; };
+		37402AEB1EFE6B7F0044A403 /* Datat.csv in Resources */ = {isa = PBXBuildFile; fileRef = 37402AEA1EFE6B7F0044A403 /* Datat.csv */; };
+		37402AEE1EFFB1670044A403 /* RecipeDetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402AED1EFFB1670044A403 /* RecipeDetailVC.swift */; };
+		375F1BFE1EFFBB6000A94CC2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 375F1BFD1EFFBB6000A94CC2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +24,14 @@
 		37402ACA1EFD8AA60044A403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37402ACC1EFD8AA60044A403 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		37402ACF1EFD8AA60044A403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		37402AD11EFD8AA60044A403 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37402AD41EFD8AA60044A403 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37402AD61EFD8AA60044A403 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37402ADD1EFD98750044A403 /* Recipe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Recipe.swift; sourceTree = "<group>"; };
+		37402AE01EFDB61A0044A403 /* RecipeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeCell.swift; sourceTree = "<group>"; };
+		37402AE41EFE64550044A403 /* csv.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = csv.swift; sourceTree = "<group>"; };
+		37402AEA1EFE6B7F0044A403 /* Datat.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Datat.csv; sourceTree = "<group>"; };
+		37402AED1EFFB1670044A403 /* RecipeDetailVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RecipeDetailVC.swift; sourceTree = "<group>"; };
+		375F1BFD1EFFBB6000A94CC2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +64,43 @@
 		37402AC91EFD8AA60044A403 /* VideoCookBook */ = {
 			isa = PBXGroup;
 			children = (
+				37402AEC1EFFB1420044A403 /* Controller */,
+				37402ADF1EFDB5E40044A403 /* View */,
+				37402ADC1EFD8BFC0044A403 /* Model */,
 				37402ACA1EFD8AA60044A403 /* AppDelegate.swift */,
-				37402ACC1EFD8AA60044A403 /* ViewController.swift */,
+				37402AE41EFE64550044A403 /* csv.swift */,
 				37402ACE1EFD8AA60044A403 /* Main.storyboard */,
-				37402AD11EFD8AA60044A403 /* Assets.xcassets */,
 				37402AD31EFD8AA60044A403 /* LaunchScreen.storyboard */,
 				37402AD61EFD8AA60044A403 /* Info.plist */,
+				375F1BFD1EFFBB6000A94CC2 /* Assets.xcassets */,
+				37402AEA1EFE6B7F0044A403 /* Datat.csv */,
 			);
 			path = VideoCookBook;
+			sourceTree = "<group>";
+		};
+		37402ADC1EFD8BFC0044A403 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				37402ADD1EFD98750044A403 /* Recipe.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		37402ADF1EFDB5E40044A403 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				37402AE01EFDB61A0044A403 /* RecipeCell.swift */,
+			);
+			name = View;
+			sourceTree = "<group>";
+		};
+		37402AEC1EFFB1420044A403 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				37402ACC1EFD8AA60044A403 /* ViewController.swift */,
+				37402AED1EFFB1670044A403 /* RecipeDetailVC.swift */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -97,6 +136,7 @@
 					37402AC61EFD8AA60044A403 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = A9YN63GW95;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,7 +165,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				37402AD51EFD8AA60044A403 /* LaunchScreen.storyboard in Resources */,
-				37402AD21EFD8AA60044A403 /* Assets.xcassets in Resources */,
+				37402AEB1EFE6B7F0044A403 /* Datat.csv in Resources */,
+				375F1BFE1EFFBB6000A94CC2 /* Assets.xcassets in Resources */,
 				37402AD01EFD8AA60044A403 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,8 +178,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37402ADE1EFD98750044A403 /* Recipe.swift in Sources */,
+				37402AE11EFDB61A0044A403 /* RecipeCell.swift in Sources */,
 				37402ACD1EFD8AA60044A403 /* ViewController.swift in Sources */,
+				37402AEE1EFFB1670044A403 /* RecipeDetailVC.swift in Sources */,
 				37402ACB1EFD8AA60044A403 /* AppDelegate.swift in Sources */,
+				37402AE51EFE64550044A403 /* csv.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -302,6 +347,7 @@
 				37402ADB1EFD8AA60044A403 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
