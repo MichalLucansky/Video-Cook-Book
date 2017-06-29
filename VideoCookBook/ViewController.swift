@@ -15,8 +15,8 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
     
     
     var recipeArray = [Recipe]()
-    var filteredRecipe = [Recipe]()
-    var insearchMode = false
+    private var filteredRecipe = [Recipe]()
+    private var insearchMode = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,36 +24,13 @@ class ViewController: UIViewController, UICollectionViewDelegate, UICollectionVi
        collectionView.dataSource = self
        searchBar.delegate = self
        searchBar.returnKeyType = UIReturnKeyType.done
-       parseDataCsv()
+       
     }
 
-    func parseDataCsv(){
-    let path = Bundle.main.path(forResource: "Datat", ofType: "csv")
-        
-        do {
-            let csv = try CSV(contentsOfURL: path!)
-            let rows = csv.rows
-            
-            for row in rows{
-                let title = row["Name"]!
-                let ingrediency = row["Ingrediency"]!
-                let url = row["Url"]!
-                let imageThumb = row["ImageThumb"]!
-                let description = row["Description"]!
-                let recipe = Recipe(title: title, ingrediency: ingrediency, url: url, description: description, imageThumb: imageThumb)
-                recipeArray.append(recipe)
-                
-              
-            }
-            
-            
-        } catch let err as NSError {
-            print(err.debugDescription)
-        }
-    
+    @IBAction func goBack(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
-    
-    
+
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         if let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "recepieCell", for: indexPath) as? RecipeCell{
             let recipe : Recipe

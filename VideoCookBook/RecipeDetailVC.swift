@@ -16,6 +16,7 @@ class RecipeDetailVC: UIViewController {
     @IBOutlet weak var ingrediencyLabel: UILabel!
     @IBOutlet weak var descriptionLable: UILabel!
     @IBOutlet weak var webView: UIWebView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         getVideo(code: recipeDetail.url)
@@ -23,6 +24,8 @@ class RecipeDetailVC: UIViewController {
         titleLable.text = recipeDetail.title
         ingrediencyLabel.text = recipeDetail.ingrediency
         descriptionLable.text = recipeDetail.description
+       
+        
     }
     
     private func getVideo(code: String){

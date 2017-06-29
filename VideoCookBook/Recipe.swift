@@ -15,7 +15,10 @@ class Recipe{
     fileprivate var _url : String
     fileprivate var _description : String
     fileprivate var _imageThumb : String
+    fileprivate var _recipeType : String
     
+    
+        
     var title : String{
         return _title
     }
@@ -31,18 +34,20 @@ class Recipe{
     var imageThumb : String{
         return _imageThumb
     }
+    var recipeType : String{
+        return _recipeType
+    }
     
     
-    init(title :String, ingrediency :String, url :String, description: String, imageThumb: String ) {
+    init(title :String, ingrediency :String, url :String, description: String, imageThumb: String, recipeType: String ) {
         self._title = title
         self._ingrediency = ingrediency
         self._url = url
         self._description = description
         self._imageThumb = imageThumb 
-       
+        self._recipeType = recipeType
        
     }
-    
     
     
 }
