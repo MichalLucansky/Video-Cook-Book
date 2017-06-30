@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		371EE8461F053A29005EC000 /* KGBrokenVesselsSketch.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 371EE8451F053A29005EC000 /* KGBrokenVesselsSketch.ttf */; };
 		37402ACB1EFD8AA60044A403 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402ACA1EFD8AA60044A403 /* AppDelegate.swift */; };
 		37402ACD1EFD8AA60044A403 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37402ACC1EFD8AA60044A403 /* ViewController.swift */; };
 		37402AD01EFD8AA60044A403 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37402ACE1EFD8AA60044A403 /* Main.storyboard */; };
@@ -23,6 +24,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		371EE8451F053A29005EC000 /* KGBrokenVesselsSketch.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = KGBrokenVesselsSketch.ttf; sourceTree = "<group>"; };
 		37402AC71EFD8AA60044A403 /* VideoCookBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VideoCookBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37402ACA1EFD8AA60044A403 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37402ACC1EFD8AA60044A403 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				37402ACA1EFD8AA60044A403 /* AppDelegate.swift */,
 				37402ACE1EFD8AA60044A403 /* Main.storyboard */,
 				37402AD31EFD8AA60044A403 /* LaunchScreen.storyboard */,
+				371EE8451F053A29005EC000 /* KGBrokenVesselsSketch.ttf */,
 				37402AD61EFD8AA60044A403 /* Info.plist */,
 				375F1BFD1EFFBB6000A94CC2 /* Assets.xcassets */,
 				37402AEA1EFE6B7F0044A403 /* Datat.csv */,
@@ -181,6 +184,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				371EE8461F053A29005EC000 /* KGBrokenVesselsSketch.ttf in Resources */,
 				37402AD51EFD8AA60044A403 /* LaunchScreen.storyboard in Resources */,
 				37402AEB1EFE6B7F0044A403 /* Datat.csv in Resources */,
 				375F1BFE1EFFBB6000A94CC2 /* Assets.xcassets in Resources */,
@@ -332,6 +336,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.naturephotography.VideoCookBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -345,6 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.naturephotography.VideoCookBook;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

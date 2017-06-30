@@ -13,6 +13,8 @@ class RecipeDetailItemCell: UICollectionViewCell {
     
     
     @IBOutlet weak var typeImage: UIImageView!
+    
+    @IBOutlet weak var labelName: UILabel!
     fileprivate var type : String = ""
     
     var itemCell : RecipeTypeItem!
@@ -28,6 +30,7 @@ class RecipeDetailItemCell: UICollectionViewCell {
         self.itemCell = itemCell
         typeImage.image = UIImage(named: itemCell.image)
         self.type = itemCell.recipeType
+        labelName.text = itemCell.recipeType
     }
     
     

@@ -12,8 +12,8 @@ class FirstSceneVC: UIViewController,UICollectionViewDelegate, UICollectionViewD
     @IBOutlet weak var collectionView: UICollectionView!
 
     private var recipeRawArray = [Recipe]()
-    private var recipeType = ["fish","none","nonMeat","beaf","none"]
-    private var recipeTypeImage = ["1","2","3","4","5"]
+    private var recipeType = ["Ryby","Hovädzina","Bravčovina","Jedlá bez mäsa","Kuracina","Dezerty","Šaláty","Všetky recepty","Polievky"]
+    private var recipeTypeImage = ["1","2","3","4","5","6","7","8","9"]
     private var itemArray = [RecipeTypeItem]()
     private var filteredRecipeArray = [Recipe]()
     
@@ -58,9 +58,7 @@ class FirstSceneVC: UIViewController,UICollectionViewDelegate, UICollectionViewD
     
     }
 
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        return CGSize(width: 90, height: 90)
-    }
+  
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "firstVc"{
              let vc = segue.destination as! ViewController
@@ -72,7 +70,7 @@ class FirstSceneVC: UIViewController,UICollectionViewDelegate, UICollectionViewD
     private func filterRecipies(recipeType: RecipeTypeItem){
         filteredRecipeArray.removeAll()
         
-        if recipeType.recipeType == "none"{
+        if recipeType.recipeType == "Všetky recepty"{
         filteredRecipeArray = recipeRawArray
         }else{
             for rType in recipeRawArray{
@@ -85,6 +83,10 @@ class FirstSceneVC: UIViewController,UICollectionViewDelegate, UICollectionViewD
         }
     
     }
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: 87, height: 87)
+    }
+    
     private func parseDataCsv(){
         let path = Bundle.main.path(forResource: "Datat", ofType: "csv")
         
